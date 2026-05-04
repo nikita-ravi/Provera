@@ -10,8 +10,8 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY api.py .
 COPY src/ ./src/
 
-# Copy data files (these should be uploaded separately or mounted)
-# COPY data/processed/ ./data/processed/
+# Copy data files
+COPY data/processed/ ./data/processed/
 
 # Expose port
 EXPOSE 8000
