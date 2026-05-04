@@ -1,0 +1,20 @@
+<svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Shield background with gradient -->
+  <path d="M20 2L4 10V19C4 29.5 11 36.5 20 38C29 36.5 36 29.5 36 19V10L20 2Z" fill="url(#shieldGradient)" stroke="#3B82F6" stroke-width="1"/>
+  <!-- Network nodes -->
+  <circle cx="20" cy="14" r="3" fill="#fff"/>
+  <circle cx="12" cy="22" r="2.5" fill="#fff"/>
+  <circle cx="28" cy="22" r="2.5" fill="#fff"/>
+  <circle cx="16" cy="30" r="2" fill="#fff"/>
+  <circle cx="24" cy="30" r="2" fill="#fff"/>
+  <!-- Network edges -->
+  <path d="M20 14L12 22M20 14L28 22M12 22L16 30M28 22L24 30M16 30L24 30" stroke="#fff" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+  <!-- Checkmark for verification -->
+  <path d="M14 22L18 26L26 16" stroke="#22C55E" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <defs>
+    <linearGradient id="shieldGradient" x1="20" y1="2" x2="20" y2="38" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1E40AF"/>
+      <stop offset="1" stop-color="#3B82F6"/>
+    </linearGradient>
+  </defs>
+</svg>

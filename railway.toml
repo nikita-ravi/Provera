@@ -1,0 +1,16 @@
+# Railway configuration for Provera Backend API
+[build]
+builder = "nixpacks"
+
+[build.nixpacks]
+pythonVersion = "3.11"
+
+[deploy]
+startCommand = "uvicorn api:app --host 0.0.0.0 --port $PORT"
+healthcheckPath = "/api/health"
+healthcheckTimeout = 300
+restartPolicyType = "on_failure"
+restartPolicyMaxRetries = 3
+
+[envs]
+PYTHONUNBUFFERED = "1"
